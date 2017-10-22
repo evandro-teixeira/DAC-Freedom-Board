@@ -28,7 +28,7 @@ bool dac_Output(uint16_t value)
 	uint8_t msb = 0;
 	uint8_t lsb = 0;
  
-    if(value < 4095)
+    if(value < 4096)
     {
     	msb = (uint8_t)(value >> 8);
     	lsb = (uint8_t)(value);
